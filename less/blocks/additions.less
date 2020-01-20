@@ -1,0 +1,135 @@
+.additions {
+  padding-top: 9px;
+  padding-bottom: 34px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+}
+
+.additions__list {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  width: 100%;
+
+  list-style: none;
+}
+
+.additions__list-item {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.additions__title {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 33px;
+  padding-right: 22px;
+
+  font-size: 24px;
+  line-height: 24px;
+
+  background-color: #ffffff;
+}
+
+.additions__title::after,
+.additions__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 12px;
+
+  top: 0;
+
+  width: 4000px;
+  height: 3px;
+
+  background-color: #68b738;
+
+  z-index: -1;
+}
+
+.additions__title::after {
+  left: 0;
+}
+
+.additions__title::before {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .additions {
+    padding-bottom: 75px;
+  }
+
+  .additions__title {
+    margin: 0;
+    margin-bottom: 81px;
+    padding-right: 37px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additions__title::before {
+    display: block;
+    right: 100%;
+  }
+
+  .additions__title::before,
+  .additions__title::after {
+    margin-top: 22px;
+  }
+
+  .additions__list {
+    margin-bottom: 70px;
+  }
+
+  .additions__list-item {
+    padding-left: 37px;
+    padding-right: 37px;
+
+    border: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additions {
+    padding-top: 13px;
+    padding-bottom: 17px;
+  }
+
+  .additions .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .additions__title {
+    margin: 0;
+    margin-bottom: 81px;
+    margin-left: -37px;
+    padding-left: 37px;
+  }
+
+  .additions__title::before,
+  .additions__title::after {
+    margin-top: 22px;
+  }
+
+  .additions__list {
+    width: 895px;
+    margin-right: auto;
+  }
+
+
+  .additions__list-item {
+    padding: 0;
+    border-left: none;
+    border-right: none;
+  }
+}

@@ -1,0 +1,127 @@
+.contacts {
+  background-color: #ffffff;
+}
+
+.page-footer--no-index .contacts {
+  background-color: #f2f2f2;
+}
+
+.contacts__info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.contacts__invitation {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+  height: 362px;
+  width: 100%;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: 100% 362px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .contacts__info {
+    padding-top: 63px;
+    padding-bottom: 57px;
+  }
+
+  .contacts__invitation {
+    padding-left: 41px;
+    width: 194px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    padding-right: 41px;
+    width: 196px;
+    text-align: right;
+    font-size: 16px;
+  }
+
+  .contacts__sity {
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .contacts__map {
+    height: 395px;
+
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+      background-size: 100% 395px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: auto;
+    position: relative;
+  }
+
+  .contacts__info {
+    position: absolute;
+    justify-content: space-around;
+    top: 95px;
+    left: auto;
+    width: 570px;
+
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .contacts__invitation {
+    padding-left: 30px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    padding-right: 30px;
+  }
+
+  .contacts__map {
+    height: 400px;
+
+    background-image: url("../img/bg-map-desktop@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+      background-size: 100% 400px;
+    }
+  }
+}

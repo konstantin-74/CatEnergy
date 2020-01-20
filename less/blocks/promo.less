@@ -1,0 +1,139 @@
+.promo {
+  padding-top: 28px;
+  color: #ffffff;
+
+  background-color: #65a93c;
+  background-image: linear-gradient(to top, #ffffff 200px, transparent 175px), url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+
+.promo__slogan {
+  margin: 0;
+  margin-bottom: 28px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.promo__button {
+  margin-bottom: 23px;
+  padding: 11px 22px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    margin-bottom: 0;
+    padding-top: 45px;
+
+    color: #111111;
+    background: none;
+  }
+
+  .promo__description {
+    padding-left: 88px;
+  }
+
+  .promo .container {
+    position: relative;
+  }
+
+  .promo__title {
+    width: 427px;
+    margin: 0;
+    margin-bottom: 42px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .promo__slogan {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .promo__image {
+    margin: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  .promo__button {
+    position: absolute;
+    top: 228px;
+    left: 120px;
+    width: 245px;
+
+    padding: 16px 0;
+    padding-right: 8px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-top: 0;
+  }
+
+  .promo .container {
+    display: flex;
+  }
+
+  .promo__image {
+    margin-top: 15px;
+    margin-left: -59px;
+    margin-bottom: 56px;
+    padding: 0;
+    width: 613px;
+    height: 499px;
+  }
+
+  .promo__description {
+    padding-top: 98px;
+    padding-left: 82px;
+  }
+
+  .promo__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .promo__slogan {
+    margin: 0;
+  }
+
+  .promo__button {
+    position: absolute;
+    left: 122px;
+    top: 331px;
+  }
+}

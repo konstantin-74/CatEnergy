@@ -1,0 +1,194 @@
+.text-field {
+  position: relative;
+}
+
+.text-field__label {
+  flex-shrink: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  align-self: center;
+}
+
+.text-field:nth-of-type(1) .text-field__label--cat {
+  margin-right: 14px;
+}
+
+.text-field:nth-of-type(2) .text-field__label--cat {
+  margin-right: 17px;
+}
+
+.text-field:nth-of-type(3) .text-field__label--cat {
+  margin-right: 15px;
+}
+
+.text-field:nth-of-type(1) .text-field__label--owner {
+  margin-right: 12px;
+}
+
+.text-field:nth-of-type(2) .text-field__label--owner {
+  margin-right: 9px;
+}
+
+.text-field__input {
+  margin: 0;
+  padding: 0;
+  padding-left: 14px;
+  padding-right: 13px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  width: 100%;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  letter-spacing: -0.4px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #444444;
+  }
+
+  &:required:focus:invalid {
+    border-color: #ff8282;
+  }
+
+  &:required:focus:invalid + .text-field__icon {
+    fill: #ff8282;
+  }
+
+  &:required:valid {
+    border-color: #444444;
+  }
+
+  &:required:valid + .text-field__icon {
+    fill: #68b738;
+  }
+}
+
+.text-field__icon {
+  position: absolute;
+
+  height: 42px;
+  top: 1px;
+  background-color: #ffffff;
+}
+
+.text-field__icon--mail {
+  width: 16px;
+  right: 16px;
+}
+
+.text-field__icon--phone {
+  right: 12px;
+}
+
+
+.text-field__input--area {
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.text-field__input--owner {
+  padding-right: 40px;
+  padding-top: 12px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--owner .form__fieldset-title {
+    margin-bottom: 76px;
+  }
+
+  .text-field__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .text-field:nth-of-type(1) .text-field__label--cat {
+    margin-right: 17px;
+  }
+
+  .text-field:nth-of-type(2) .text-field__label--cat {
+    margin-right: 20px;
+  }
+
+  .text-field:nth-of-type(3) .text-field__label--cat {
+    margin-right: 17px;
+  }
+
+  .text-field:nth-of-type(1) .text-field__label--owner {
+    margin-right: 19px;
+  }
+
+  .text-field:nth-of-type(2) .text-field__label--owner {
+    margin-right: 13px;
+  }
+
+  .text-field__input {
+    padding-left: 17px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .text-field__input--owner {
+    padding-left: 19px;
+  }
+
+  .text-field__icon {
+    height: 50px;
+    background-color: #ffffff;
+  }
+
+  .text-field__icon--mail {
+    right: 20px;
+  }
+
+  .text-field__icon--phone {
+    right: 16px;
+  }
+
+  .text-field__label--owner {
+    margin-right: 17px;
+  }
+
+  .text-field__input--area {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    min-height: 175px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-field__input {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .text-field:nth-of-type(1) .text-field__label--owner {
+    margin-right: 22px;
+  }
+
+  .text-field:nth-of-type(2) .text-field__label--owner {
+    margin-right: 15px;
+  }
+
+  .text-field__icon--phone {
+    right: 18px;
+  }
+}
